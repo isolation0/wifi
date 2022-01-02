@@ -2,59 +2,6 @@
 
 # -*- coding: utf-8 -*-
 
-"""
-    wifi
-
-    author: derv82 at gmail
-    author: bwall @botnet_hunter (ballastsec@gmail.com)
-    author: drone @dronesec (ballastsec@gmail.com)
-
-    Thanks to everyone that contributed to this project.
-    If you helped in the past and want your name here, shoot me an email
-
-    Licensed under the GNU General Public License Version 2 (GNU GPL v2),
-        available at: http://www.gnu.org/licenses/gpl-2.0.txt
-
-    (C) 2011 Derv Merkler
-
-    Ballast Security additions
-    -----------------
-     - No longer requires to be root to run -cracked
-     - cracked.txt changed to cracked.csv and stored in csv format(easier to read, no \x00s)
-         - Backwards compatibility
-     - Made a run configuration class to handle globals
-     - Added -recrack (shows already cracked APs in the possible targets, otherwise hides them)
-     - Changed the updater to grab files from GitHub and not Google Code
-     - Use argparse to parse command-line arguments
-     - -wepca flag now properly initialized if passed through CLI
-     - parse_csv uses python csv library
-    -----------------
-
-
-    TODO:
-
-    Restore same command-line switch names from v1
-
-    If device already in monitor mode, check for and, if applicable, use macchanger
-
-     WPS
-     * Mention reaver automatically resumes sessions
-     * Warning about length of time required for WPS attack (*hours*)
-     * Show time since last successful attempt
-     * Percentage of tries/attempts ?
-     * Update code to work with reaver 1.4 ("x" sec/att)
-
-     WEP:
-     * ability to pause/skip/continue    (done, not tested)
-     * Option to capture only IVS packets (uses --output-format ivs,csv)
-       - not compatible on older aircrack-ng's.
-           - Just run "airodump-ng --output-format ivs,csv", "No interface specified" = works
-         - would cut down on size of saved .caps
-
-     reaver:
-          MONITOR ACTIVITY!
-          - Enter ESSID when executing (?)
-       - Ensure WPS key """
 # ############
 # LIBRARIES #
 #############
